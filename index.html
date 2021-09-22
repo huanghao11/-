@@ -402,6 +402,9 @@
     m += 1;  // JavaScript months are 0-11
     var y = formattedDate.getFullYear();
 
+    if(d<=9) d = '0'+d;
+
+    if(m<=9) m = '0'+m;
     $(".this_day").html(y + "-" + m + "-" + d);
 
 </script>
